@@ -12,7 +12,6 @@ public Node (String item){
     data = item; 
     leftNode = null; 
     rightNode = null;
-
     }
 }
 
@@ -27,7 +26,6 @@ void preOrder(Node node){
         preOrder(node.rightNode);
     }
 }
-
 public static void main(String[] args) {
 
         binaryTree tree = new binaryTree();
@@ -39,10 +37,6 @@ public static void main(String[] args) {
         tree.root.rightNode.rightNode = new Node ("F");
 
         tree.preOrder(tree.root);
-
     }
-
-
-
 }
 
